@@ -1,4 +1,4 @@
-from unittest import TestCase, main
+from unittest import TestCase
 from src.unit_test.parameterized_test.test_target import rock_paper_scissors
 
 
@@ -25,7 +25,3 @@ class TestRockPaperScissors(TestCase):
 
         for p1_shape, p2_shape, expected_result in test_patterns:
             self.assertEqual(rock_paper_scissors(p1_shape=p1_shape, p2_shape=p2_shape), expected_result)
-
-
-if __name__ == '__main__':
-    main()
